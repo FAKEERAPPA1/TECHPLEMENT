@@ -1,0 +1,35 @@
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Quotes Website</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> 
+  <header> 
+   <h1>Quotes </h1> 
+   <input type="text" id="authorSearch" placeholder="Search by Author" oninput="filterQuotes()"> 
+  </header> 
+  <main> 
+   <section class="quote" data-author=" Steve Jobs "> 
+    <blockquote>
+      "The only way to do great work is to love what you do." 
+    </blockquote> 
+    <p class="author">Steve Jobs</p> 
+   </section> 
+   <section class="quote" data-author="Oscar Wilde"> 
+    <blockquote>
+      "Be yourself; everyone else is already taken." 
+    </blockquote> 
+    <p class="author">Oscar Wilde</p> 
+   </section> 
+   <section class="quote" data-author="Albert Einstein"> 
+    <blockquote>
+      "Imagination is more important than knowledge." 
+    </blockquote> 
+    <p class="author">Albert Einstein</p> 
+   </section> 
+  </main> 
+  <script src="script.js"></script> 
+ </body>
+</html>

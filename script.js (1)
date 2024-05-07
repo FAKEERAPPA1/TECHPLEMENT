@@ -1,0 +1,19 @@
+<html> 
+ <head></head> 
+ <body> 
+ 
+<script type="text/javascript" id="dcoder_script">function filterQuotes() {
+    var input, filter, quotes, i, author, quote;
+    input = document.getElementById("authorSearch");
+    filter = input.value.toUpperCase();
+    quotes = document.querySelectorAll(".quote");
+    for (i = 0; i < quotes.length; i++) {
+        author = quotes[i].getAttribute("data-author");
+        quote = quotes[i];
+        if (author.toUpperCase().indexOf(filter) > -1) {
+            quote.style.display = "";
+        } else {
+            quote.style.display = "none";
+        }
+    }
+}</script></body></html>
